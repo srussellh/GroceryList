@@ -11,7 +11,7 @@ import CoreData
 
 class CoreDataStack {
     static let container: NSPersistentContainer = {
-        let persistentContainer = NSPersistentContainer(name: "TaskManager")
+        let persistentContainer = NSPersistentContainer(name: "Groceries")
         persistentContainer.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error {
                 fatalError("Unresolved Error: \(error)")
@@ -19,7 +19,6 @@ class CoreDataStack {
         })
         return persistentContainer
     }()
-    
     static var context: NSManagedObjectContext {
         return container.viewContext
     }

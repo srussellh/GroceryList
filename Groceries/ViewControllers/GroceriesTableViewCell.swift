@@ -25,7 +25,12 @@ class GroceriesTableViewCell: UITableViewCell {
     
     func updateButton(_ isComplete: Bool) {
         let imageName = isComplete ? "checked" : "unchecked"
-       
+       buttonLabel.setImage(UIImage(named: imageName), for: .normal)
+    }
+    
+    func update(groceries: Groceries) {
+        updateButton(groceries.purchased)
+        groceriesLabel.text = groceries.name
     }
     
 }

@@ -14,13 +14,12 @@ class GroceriesController {
     static let shared = GroceriesController()
     
     var groceries: [Groceries] {
-        let request: NSFetchRequestResult<Groceries> = Groceries.fetchRequest()
+        let request: NSFetchRequest<Groceries> = Groceries.fetchRequest()
         return try! CoreDataStack.context.fetch(request)
     }
     
-    //CRUD
     func create(name: String){
-        Groceries(name: name)
+       let _ = Groceries(name: name)
         saveToPersistence()
     }
     
@@ -29,6 +28,11 @@ class GroceriesController {
             moc.delete(groceries)
             saveToPersistence()
         }
+    }
+    
+    func changeBool(groceries: Groceries){
+        groceries.purchased = !groceries.purchased
+        saveToPersistence()
     }
     
     func saveToPersistence(){
@@ -40,5 +44,8 @@ class GroceriesController {
         }
     }
     
+    
+    
 }
+
 

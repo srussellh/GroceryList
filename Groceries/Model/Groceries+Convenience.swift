@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 
 extension Groceries {
-    
     convenience init(name: String, purchased: Bool = false, context: NSManagedObjectContext = CoreDataStack.context) {
         self.init(context: context)
         self.name = name

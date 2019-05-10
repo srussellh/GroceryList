@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		02071FCC2285CC1F00A4122E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FCB2285CC1F00A4122E /* AppDelegate.swift */; };
-		02071FCE2285CC1F00A4122E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FCD2285CC1F00A4122E /* ViewController.swift */; };
 		02071FD12285CC1F00A4122E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02071FCF2285CC1F00A4122E /* Main.storyboard */; };
 		02071FD32285CC2000A4122E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02071FD22285CC2000A4122E /* Assets.xcassets */; };
 		02071FD62285CC2000A4122E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02071FD42285CC2000A4122E /* LaunchScreen.storyboard */; };
+		02071FE32285CE6900A4122E /* Groceries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02071FE12285CE6900A4122E /* Groceries.xcdatamodeld */; };
+		02071FE52285CEE700A4122E /* GroceriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FE42285CEE600A4122E /* GroceriesTableViewController.swift */; };
+		02071FE72285CF1200A4122E /* GroceriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FE62285CF1200A4122E /* GroceriesController.swift */; };
+		02071FE92285D11900A4122E /* GroceriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FE82285D11900A4122E /* GroceriesTableViewCell.swift */; };
+		02071FEB2285D3CB00A4122E /* Groceries+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FEA2285D3CB00A4122E /* Groceries+Convenience.swift */; };
+		02071FED2285D67200A4122E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02071FEC2285D67200A4122E /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02071FC82285CC1F00A4122E /* Assessment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02071FC82285CC1F00A4122E /* Groceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02071FCB2285CC1F00A4122E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02071FCD2285CC1F00A4122E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02071FD02285CC1F00A4122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02071FD22285CC2000A4122E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02071FD52285CC2000A4122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02071FD72285CC2000A4122E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02071FE22285CE6900A4122E /* Groceries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Groceries.xcdatamodel; sourceTree = "<group>"; };
+		02071FE42285CEE600A4122E /* GroceriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesTableViewController.swift; sourceTree = "<group>"; };
+		02071FE62285CF1200A4122E /* GroceriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesController.swift; sourceTree = "<group>"; };
+		02071FE82285D11900A4122E /* GroceriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesTableViewCell.swift; sourceTree = "<group>"; };
+		02071FEA2285D3CB00A4122E /* Groceries+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Groceries+Convenience.swift"; sourceTree = "<group>"; };
+		02071FEC2285D67200A4122E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +48,7 @@
 		02071FBF2285CC1F00A4122E = {
 			isa = PBXGroup;
 			children = (
-				02071FCA2285CC1F00A4122E /* Assessment2 */,
+				02071FCA2285CC1F00A4122E /* Groceries */,
 				02071FC92285CC1F00A4122E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +56,67 @@
 		02071FC92285CC1F00A4122E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02071FC82285CC1F00A4122E /* Assessment2.app */,
+				02071FC82285CC1F00A4122E /* Groceries.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02071FCA2285CC1F00A4122E /* Assessment2 */ = {
+		02071FCA2285CC1F00A4122E /* Groceries */ = {
+			isa = PBXGroup;
+			children = (
+				02071FDD2285CC6000A4122E /* Resources */,
+				02071FCF2285CC1F00A4122E /* Main.storyboard */,
+				02071FEF2285DB3800A4122E /* Model */,
+				02071FEE2285DB2700A4122E /* ViewControllers */,
+				02071FF02285DB4300A4122E /* ModelControllers */,
+			);
+			path = Groceries;
+			sourceTree = "<group>";
+		};
+		02071FDD2285CC6000A4122E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				02071FCB2285CC1F00A4122E /* AppDelegate.swift */,
-				02071FCD2285CC1F00A4122E /* ViewController.swift */,
-				02071FCF2285CC1F00A4122E /* Main.storyboard */,
 				02071FD22285CC2000A4122E /* Assets.xcassets */,
 				02071FD42285CC2000A4122E /* LaunchScreen.storyboard */,
 				02071FD72285CC2000A4122E /* Info.plist */,
 			);
-			path = Assessment2;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02071FEE2285DB2700A4122E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				02071FE42285CEE600A4122E /* GroceriesTableViewController.swift */,
+				02071FE82285D11900A4122E /* GroceriesTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		02071FEF2285DB3800A4122E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02071FE12285CE6900A4122E /* Groceries.xcdatamodeld */,
+				02071FEC2285D67200A4122E /* CoreDataStack.swift */,
+				02071FEA2285D3CB00A4122E /* Groceries+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02071FF02285DB4300A4122E /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				02071FE62285CF1200A4122E /* GroceriesController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02071FC72285CC1F00A4122E /* Assessment2 */ = {
+		02071FC72285CC1F00A4122E /* Groceries */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02071FDA2285CC2000A4122E /* Build configuration list for PBXNativeTarget "Assessment2" */;
+			buildConfigurationList = 02071FDA2285CC2000A4122E /* Build configuration list for PBXNativeTarget "Groceries" */;
 			buildPhases = (
 				02071FC42285CC1F00A4122E /* Sources */,
 				02071FC52285CC1F00A4122E /* Frameworks */,
@@ -79,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = Assessment2;
+			name = Groceries;
 			productName = Assessment2;
-			productReference = 02071FC82285CC1F00A4122E /* Assessment2.app */;
+			productReference = 02071FC82285CC1F00A4122E /* Groceries.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 02071FC32285CC1F00A4122E /* Build configuration list for PBXProject "Assessment2" */;
+			buildConfigurationList = 02071FC32285CC1F00A4122E /* Build configuration list for PBXProject "Groceries" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02071FC72285CC1F00A4122E /* Assessment2 */,
+				02071FC72285CC1F00A4122E /* Groceries */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02071FCE2285CC1F00A4122E /* ViewController.swift in Sources */,
+				02071FED2285D67200A4122E /* CoreDataStack.swift in Sources */,
 				02071FCC2285CC1F00A4122E /* AppDelegate.swift in Sources */,
+				02071FE32285CE6900A4122E /* Groceries.xcdatamodeld in Sources */,
+				02071FE92285D11900A4122E /* GroceriesTableViewCell.swift in Sources */,
+				02071FEB2285D3CB00A4122E /* Groceries+Convenience.swift in Sources */,
+				02071FE52285CEE700A4122E /* GroceriesTableViewController.swift in Sources */,
+				02071FE72285CF1200A4122E /* GroceriesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Assessment2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Groceries/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Assessment2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Groceries/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02071FC32285CC1F00A4122E /* Build configuration list for PBXProject "Assessment2" */ = {
+		02071FC32285CC1F00A4122E /* Build configuration list for PBXProject "Groceries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02071FD82285CC2000A4122E /* Debug */,
@@ -324,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02071FDA2285CC2000A4122E /* Build configuration list for PBXNativeTarget "Assessment2" */ = {
+		02071FDA2285CC2000A4122E /* Build configuration list for PBXNativeTarget "Groceries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02071FDB2285CC2000A4122E /* Debug */,
@@ -334,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02071FE12285CE6900A4122E /* Groceries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02071FE22285CE6900A4122E /* Groceries.xcdatamodel */,
+			);
+			currentVersion = 02071FE22285CE6900A4122E /* Groceries.xcdatamodel */;
+			path = Groceries.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 02071FC02285CC1F00A4122E /* Project object */;
 }
